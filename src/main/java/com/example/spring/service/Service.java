@@ -13,6 +13,7 @@ public class Service {
         storage.addAll(id);
     }
 
-
+    public Collection<Integer> get() {
+        return Collections.unmodifiableSet(storage);
     }
 }
